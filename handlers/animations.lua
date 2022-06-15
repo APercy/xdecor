@@ -27,7 +27,7 @@ function xdecor.sit(pos, node, clicker, pointed_thing)
 	elseif not default.player_attached[player_name] and node.param2 <= 3 and
 			not ctrl.sneak and vector.equals(vel, vector.new()) then
 
-		clicker:set_eye_offset({x = 0, y = -7, z = 2}, vector.new())
+		clicker:set_eye_offset({x = 0, y = 0, z = 2}, vector.new())
 		clicker:set_physics_override({speed = 0, jump = 0, gravity = 1})
 		clicker:set_pos(pos)
 		default.player_attached[player_name] = true
